@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**隐藏可滚动的滚动条*/
+.hide_scrollbar {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none; }
+  .hide_scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
+
+.reset_scrollbar_v::-webkit-scrollbar {
+  width: 5px;
+  height: 0; }
+.reset_scrollbar_v::-webkit-scrollbar-thumb {
+  /*滚动条里面可以拖动的那部分（位置5）*/
+  background: #999;
+  border-radius: 5px; }
+.reset_scrollbar_v::-webkit-scrollbar-track {
+  /*外层轨道，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置3）*/
+  background: #eee; }
+.reset_scrollbar_v::-webkit-scrollbar-track-piece {
+  /*内层轨道，滚动条中间部分*/
+  background: #eee; }
+
+.reset_scrollbar_h::-webkit-scrollbar {
+  width: 0;
+  height: 5px; }
+.reset_scrollbar_h::-webkit-scrollbar-thumb {
+  /*滚动条里面可以拖动的那部分（位置5）*/
+  background: #999;
+  border-radius: 5px; }
+.reset_scrollbar_h::-webkit-scrollbar-track {
+  /*外层轨道，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置3）*/
+  background: #eee; }
+.reset_scrollbar_h::-webkit-scrollbar-track-piece {
+  /*内层轨道，滚动条中间部分*/
+  background: #eee; }
+
+.reset_scrollbar_all::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; }
+.reset_scrollbar_all::-webkit-scrollbar-thumb {
+  /*滚动条里面可以拖动的那部分（位置5）*/
+  background: #999;
+  border-radius: 5px; }
+.reset_scrollbar_all::-webkit-scrollbar-track {
+  /*外层轨道，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置3）*/
+  background: #eee; }
+.reset_scrollbar_all::-webkit-scrollbar-track-piece {
+  /*内层轨道，滚动条中间部分*/
+  background: #eee; }
+
+#myheader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 100; }
+
+#myleft {
+  position: fixed;
+  width: 210px;
+  top: 50px;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  border-right: 1px solid #BFBFBF; }
+
+#mycontent {
+  position: fixed;
+  top: 50px;
+  left: 210px;
+  right: 0;
+  bottom: 0;
+  overflow: auto; }
+
+/*# sourceMappingURL=common.css.map */
