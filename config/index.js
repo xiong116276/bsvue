@@ -12,11 +12,19 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       "/api":{
-        target:"http://192.168.0.101:8008",
+        target:"http://192.168.0.195:82/wxb.php",
         secure: false,
         changeOrigin:true,
         pathRewrite:{
           "^/api":""
+        }
+      },
+      "/lili":{
+        target:"http://192.168.0.172/wxb.php",
+        secure: false,
+        changeOrigin:true,
+        pathRewrite:{
+          "^/lili":""
         }
       }
     },
@@ -46,7 +54,7 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.php'),
+    index: path.resolve(__dirname, '../dist/index.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
