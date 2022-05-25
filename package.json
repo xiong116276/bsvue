@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^3.4.1",
-    "bootstrap-table": "^1.11.1",
+    "bootstrap-table": "^1.20.2",
     "bootstrap-table-fixed-columns-pro": "^1.0.3",
     "distpicker": "^2.0.5",
     "echarts": "^4.2.1",
